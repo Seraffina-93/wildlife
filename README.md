@@ -1,8 +1,8 @@
 # Programming challenge
 
-This is a programming challenge given by Wildlife. It consists in 5 iterations.
+This is a programming challenge given by Wildlife. The challenge consists in 5 iterations.
 
-For solving this challenge, I used Python 3 on my MacBook Pro with macOS Catalina V10.15.5. In order to test the Port Scanners, I used a virtual machine with Metasploitable 2 and my localhost.
+I used Python 3 on my MacBook Pro with macOS Catalina V10.15.5. In order to test the Port Scanners, I used a virtual machine with Metasploitable 2 and my localhost.
 
 ## Iteration 1
 This is a simple port scanner. For this iteration, I used the modules sys, socket and termcolod. 
@@ -40,7 +40,15 @@ $ iteration4.py [-t <threads>] [-f] -H <target host>
 
 ## Iteration 5
 For this iteration a dockerized the Port Scanner from Iteration 4. 
+
 Usage of the program:
 ```
-$ iteration1.py [-t <threads>] [-f] -H <target host>
+$ docker run wildlife:latest [-t <threads>] [-f] -H <target host>
 ``` 
+
+
+Notes: for some reason I experienced some problems running the last docker image, but this didn't happen before when I tried with the first iterations. I believe it is a local problem, I will try again in another computer and update this.
+
+
+Thanks ! :)
+
